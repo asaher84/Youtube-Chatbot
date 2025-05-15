@@ -1,8 +1,3 @@
-## 🚀 Run the App
-
-```bash
-streamlit run youtube_chatbot.py
-
 ## 🌍 Supported Languages
 
 | Language             | Code    |
