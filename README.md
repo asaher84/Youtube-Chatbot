@@ -34,11 +34,12 @@ source venv/bin/activate  # or venv\\Scripts\\activate on Windows
 pip install -r requirements.txt
 
 ---
-
+```bash
 ## 🚀Run the App
 streamlit run youtube_chatbot.py
 ---
 
+```bash
 ## 🌐 Supported Languages
   Language
   English	en
@@ -51,7 +52,7 @@ streamlit run youtube_chatbot.py
   Japanese	ja
 
 ---
-
+```bash
 #👨‍💻 Author
 ## Aditya
  ### Aspiring AI Engineer
