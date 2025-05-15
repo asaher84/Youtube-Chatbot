@@ -22,19 +22,7 @@ A Streamlit-based intelligent chatbot that answers questions about any YouTube v
 4. FAISS indexes the transcript
 5. LangChain retrieves context and Groq's LLM answers the question
 
----
-
-## 🛠️ Installation
-
-```bash
-git clone https://github.com/yourusername/youtube-chatbot.git
-cd youtube-chatbot
-python -m venv venv
-source venv/bin/activate  # or venv\\Scripts\\activate on Windows
-pip install -r requirements.txt
-
----
-
+--
 ## 🌍 Supported Languages
 
 | Language             | Code    |
@@ -53,5 +41,13 @@ pip install -r requirements.txt
 ## 👨‍💻 Author
 
 ### Aditya
-### Aspiring AI Engineer
+### Aspiring AI Engineer-
+
+---
+## 🚀 Run the App
+
+```bash
+streamlit run youtube_chatbot.py
+
+
 
