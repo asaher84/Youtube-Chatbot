@@ -9,8 +9,8 @@ from langchain_core.runnables import RunnableParallel, RunnablePassthrough, Runn
 from langchain_core.output_parsers import StrOutputParser
 
 # --- LLM Setup ---
-groq_api_key = "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"
-llm = ChatGroq(groq_api_key=groq_api_key,
+
+llm = ChatGroq(,
                model_name='gemma2-9b-it')  # type:ignore
 
 # --- Helper Functions ---
@@ -119,3 +119,4 @@ if st.session_state.qa:
         st.markdown(f"**{response}**")
 else:
     st.info("Load a video from the sidebar to get started.")
+
