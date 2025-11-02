@@ -10,8 +10,8 @@ from langchain_core.output_parsers import StrOutputParser
 
 # --- LLM Setup ---
 
-llm = ChatGroq(,
-               model_name='gemma2-9b-it')  # type:ignore
+llm = ChatGroq(api_key = GROQ_API_KEY,
+               model_name='openai/gpt-oss-120b')  # type:ignore
 
 # --- Helper Functions ---
 
@@ -119,4 +119,5 @@ if st.session_state.qa:
         st.markdown(f"**{response}**")
 else:
     st.info("Load a video from the sidebar to get started.")
+
 
