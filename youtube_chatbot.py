@@ -7,10 +7,10 @@ from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate
 from langchain_core.runnables import RunnableParallel, RunnablePassthrough, RunnableLambda
 from langchain_core.output_parsers import StrOutputParser
-
+import os
 # --- LLM Setup ---
 
-llm = ChatGroq(api_key = GROQ_API_KEY,
+llm = ChatGroq(api_key = os.getenv("GROQ_API_KEY"),
                model_name='openai/gpt-oss-120b')  # type:ignore
 
 # --- Helper Functions ---
@@ -119,5 +119,6 @@ if st.session_state.qa:
         st.markdown(f"**{response}**")
 else:
     st.info("Load a video from the sidebar to get started.")
+
 
 
